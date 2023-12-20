@@ -26,7 +26,7 @@ services:
       - ~/.ssh/known_hosts:/var/www/.ssh/known_hosts:cached
       - appdata:/var/www/html
       - sockdata:/sock
-      - ssldata:/home/nazeel-usr/ssl/letsencrypt
+      - ssldata:/etc/nginx/certs
     #extra_hosts: &appextrahosts
       ## Selenium support, replace "magento.test" with URL of your site
       #- "magento.test:172.17.0.1"
